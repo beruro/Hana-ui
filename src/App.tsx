@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Icon icon="arrow-up" theme="danger" size="10x" />
+        <Icon icon="arrow-up" theme="primary" size="10x" />
         {/* <FontAwesomeIcon icon={faCoffee} size="10x" /> */}
         <Menu
           defaultIndex="0"
