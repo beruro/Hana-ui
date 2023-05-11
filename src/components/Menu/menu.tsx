@@ -18,11 +18,20 @@ interface IMenuContext {
   index: string;
   onSelect?: SelectCallback;
   mode?: MenuMode;
+  defaultOpenSubMenus?: string[];
 }
 //创建context
 export const MenuContext = createContext<IMenuContext>({ index: "0" });
 export const Menu: React.FC<MenuProps> = (props) => {
-  const { className, mode, style, children, defaultIndex, onSelect } = props;
+  const {
+    className,
+    mode,
+    style,
+    children,
+    defaultIndex,
+    onSelect,
+    defaultOpenSubMenus,
+  } = props;
   const [currentActive, setActive] = useState(defaultIndex);
   const classes = classNames("fish-menu", className, {
     "menu-vertical": mode === "vertical",
@@ -40,6 +49,7 @@ export const Menu: React.FC<MenuProps> = (props) => {
     index: currentActive ? currentActive : "0",
     onSelect: handleClick,
     mode: mode,
+    defaultOpenSubMenus,
   };
   const renderChildren = () => {
     return React.Children.map(children, (child, index) => {
