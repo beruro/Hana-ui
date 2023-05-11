@@ -4,7 +4,7 @@ import classNames from "classnames";
 import { MenuItemProps } from "./menuItem";
 
 export interface SubMenuProps {
-  index?: number;
+  index?: string;
   title: string;
   className?: string;
   children?: React.ReactNode;
