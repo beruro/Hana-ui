@@ -1,7 +1,7 @@
 import React from "react";
 import { Meta, StoryFn } from "@storybook/react";
 import { ComponentStory } from "@storybook/react";
-
+import mdx from "./button.mdx";
 //import WelcomeMDX from '../Welcome/Welcome.stories.mdx'
 import Button from "./button";
 
@@ -9,11 +9,11 @@ import Button from "./button";
 export default {
   title: "第四章：Button",
   component: Button,
-  // parameters: {
-  //   docs: {
-  //     page: WelcomeMDX
-  //   }
-  // }
+  parameters: {
+    docs: {
+      page: mdx,
+    },
+  },
 } as Meta<typeof Button>;
 
 const Template: StoryFn<typeof Button> = (args) => <Button {...args} />;

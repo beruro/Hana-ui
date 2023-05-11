@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Menu
-          // defaultIndex={0}
+          defaultIndex="0"
           onSelect={(index) => {
             alert(index);
           }}

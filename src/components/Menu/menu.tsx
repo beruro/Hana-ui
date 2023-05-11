@@ -17,6 +17,7 @@ export interface MenuProps {
 interface IMenuContext {
   index: string;
   onSelect?: SelectCallback;
+  mode?: MenuMode;
 }
 //创建context
 export const MenuContext = createContext<IMenuContext>({ index: "0" });
@@ -38,6 +39,7 @@ export const Menu: React.FC<MenuProps> = (props) => {
     //onSelect( ) => handleClick(index) => { handle}
     index: currentActive ? currentActive : "0",
     onSelect: handleClick,
+    mode: mode,
   };
   const renderChildren = () => {
     return React.Children.map(children, (child, index) => {
