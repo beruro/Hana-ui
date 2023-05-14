@@ -3,16 +3,15 @@ import React from "react";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import {
-  faCheckSquare,
-  faCoffee,
-  fas,
-} from "@fortawesome/free-solid-svg-icons";
+import { fas } from "@fortawesome/free-solid-svg-icons";
 import Button from "./components/Button/button";
 import Menu from "./components/Menu/menu";
 import MenuItem from "./components/Menu/menuItem";
 import SubMenu from "./components/Menu/subMenu";
 import Icon from "./components/Icon/icon";
+// import Transition from "./components/Transition/transition";
+import Input from "./components/Input";
+
 library.add(fas);
 function App() {
   return (
@@ -51,6 +50,7 @@ function App() {
         <Button disabled btnType="link">
           Disabled Link
         </Button>
+        <Input placeholder="nihao"></Input>
         <div>i am a fish</div>
       </header>
     </div>
