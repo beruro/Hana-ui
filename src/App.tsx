@@ -12,6 +12,7 @@ import Icon from "./components/Icon/icon";
 // import Transition from "./components/Transition/transition";
 import Input from "./components/Input";
 import AutoComplete from "./components/AutoComplete";
+// import Upload from "./components/Upload";
 
 library.add(fas);
 const lakers = [
@@ -33,6 +34,13 @@ const handleFetch = (query: string) => {
     .filter((name) => name.includes(query))
     .map((name) => ({ value: name }));
 };
+// const checkFileSize = (file: File) => {
+//   if (Math.round(file.size / 1024) > 50) {
+//     alert("file too big");
+//     return false;
+//   }
+//   return true;
+// };
 function App() {
   return (
     <div className="App">
@@ -75,7 +83,14 @@ function App() {
           fetchSuggestions={handleFetch}
           placeholder="输入湖人队球员英文名试试"
         ></AutoComplete>
-
+        {/* <Upload
+          action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
+          beforeUpload={checkFileSize}
+        >
+          <Button size="lg" btnType="primary">
+            <Icon icon="upload" /> 不能传大于50Kb！{" "}
+          </Button>
+        </Upload> */}
         <div>i am a fish</div>
       </header>
     </div>
