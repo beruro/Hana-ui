@@ -11,8 +11,28 @@ import SubMenu from "./components/Menu/subMenu";
 import Icon from "./components/Icon/icon";
 // import Transition from "./components/Transition/transition";
 import Input from "./components/Input";
+import AutoComplete from "./components/AutoComplete";
 
 library.add(fas);
+const lakers = [
+  "bradley",
+  "pope",
+  "caruso",
+  "cook",
+  "cousins",
+  "james",
+  "AD",
+  "green",
+  "howard",
+  "kuzma",
+  "McGee",
+  "rando",
+];
+const handleFetch = (query: string) => {
+  return lakers
+    .filter((name) => name.includes(query))
+    .map((name) => ({ value: name }));
+};
 function App() {
   return (
     <div className="App">
@@ -51,6 +71,11 @@ function App() {
           Disabled Link
         </Button>
         <Input placeholder="nihao"></Input>
+        <AutoComplete
+          fetchSuggestions={handleFetch}
+          placeholder="输入湖人队球员英文名试试"
+        ></AutoComplete>
+
         <div>i am a fish</div>
       </header>
     </div>
