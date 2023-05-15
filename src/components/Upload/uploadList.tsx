@@ -11,10 +11,10 @@ export const UploadList: FC<UploadListProps> = (props) => {
   const { fileList, onRemove } = props;
   console.log("firelist", fileList);
   return (
-    <ul className="viking-upload-list">
+    <ul className="fish-upload-list">
       {fileList.map((item) => {
         return (
-          <li className="viking-upload-list-item" key={item.uid}>
+          <li className="fish-upload-list-item" key={item.uid}>
             <span className={`file-name file-name-${item.status}`}>
               <Icon icon="file-alt" theme="secondary" />
               {item.name}

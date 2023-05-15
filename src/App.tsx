@@ -12,7 +12,7 @@ import Icon from "./components/Icon/icon";
 // import Transition from "./components/Transition/transition";
 import Input from "./components/Input";
 import AutoComplete from "./components/AutoComplete";
-// import Upload from "./components/Upload";
+import Upload from "./components/Upload";
 
 library.add(fas);
 const lakers = [
@@ -91,6 +91,17 @@ function App() {
             <Icon icon="upload" /> 不能传大于50Kb！{" "}
           </Button>
         </Upload> */}
+        <Upload
+          // {...args}
+          action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
+          name="fileName"
+          multiple
+          drag
+        >
+          <Icon icon="upload" size="5x" theme="secondary" />
+          <br />
+          <p>点击或者拖动到此区域进行上传</p>
+        </Upload>
         <div>i am a fish</div>
       </header>
     </div>
