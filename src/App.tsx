@@ -13,7 +13,8 @@ import Icon from "./components/Icon/icon";
 import Input from "./components/Input";
 import AutoComplete from "./components/AutoComplete";
 import Upload from "./components/Upload";
-
+import Form from "./components/Form/form";
+import FormItem from "./components/Form/formItem";
 library.add(fas);
 const lakers = [
   "bradley",
@@ -102,6 +103,27 @@ function App() {
           <br />
           <p>点击或者拖动到此区域进行上传</p>
         </Upload>
+        <Form>
+          <FormItem
+            label="用户名"
+            name="name"
+            rules={[{ type: "string", required: true, min: 3 }]}
+          >
+            <Input />
+          </FormItem>
+          <FormItem
+            label="密码"
+            name="password"
+            rules={[{ type: "string", required: true, min: 3, max: 8 }]}
+          >
+            <Input type="password" />
+          </FormItem>
+          <div className="viking-form-submit-area">
+            <Button type="submit" btnType="primary">
+              登陆
+            </Button>
+          </div>
+        </Form>
         <div>i am a fish</div>
       </header>
     </div>
