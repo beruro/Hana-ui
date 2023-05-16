@@ -7,6 +7,7 @@ import { fas } from "@fortawesome/free-solid-svg-icons";
 import Button from "./components/Button/button";
 import Menu from "./components/Menu/menu";
 import MenuItem from "./components/Menu/menuItem";
+// import TransMenu from "./components/Menu";
 import SubMenu from "./components/Menu/subMenu";
 import Icon from "./components/Icon/icon";
 // import Transition from "./components/Transition/transition";
@@ -15,6 +16,8 @@ import AutoComplete from "./components/AutoComplete";
 import Upload from "./components/Upload";
 import Form from "./components/Form/form";
 import FormItem from "./components/Form/formItem";
+// import TranSelect from "./components/Select/select";
+import TransSelect from "./components/Select";
 library.add(fas);
 const lakers = [
   "bradley",
@@ -118,13 +121,19 @@ function App() {
           >
             <Input type="password" />
           </FormItem>
-          <div className="viking-form-submit-area">
+          <div className="fish-form-submit-area">
             <Button type="submit" btnType="primary">
               登陆
             </Button>
           </div>
         </Form>
-
+        <TransSelect placeholder="请选择">
+          <TransSelect.Option value="nihao" />
+          <TransSelect.Option value="nihao2" />
+          <TransSelect.Option value="nihao3" />
+          <TransSelect.Option value="disabled" disabled />
+          <TransSelect.Option value="nihao5" />
+        </TransSelect>
         <div>i am a fish</div>
       </header>
     </div>

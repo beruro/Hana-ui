@@ -47,7 +47,7 @@ export const SelectContext = createContext<ISelectContext>({
  * ### 引用方法
  *
  * ~~~js
- * import { Select } from 'vikingship'
+ * import { Select } from 'fishship'
  * // 然后可以使用 <Select> 和 <Select.Option>
  * ~~~
  */
@@ -146,14 +146,14 @@ export const Select: FC<SelectProps> = (props) => {
       }
     });
   };
-  const containerClass = classNames("viking-select", {
+  const containerClass = classNames("fish-select", {
     "menu-is-open": menuOpen,
     "is-disabled": disabled,
     "is-multiple": multiple,
   });
   return (
     <div className={containerClass} ref={containerRef}>
-      <div className="viking-select-input" onClick={handleClick}>
+      <div className="fish-select-input" onClick={handleClick}>
         <Input
           ref={input}
           placeholder={placeholder}
@@ -166,17 +166,17 @@ export const Select: FC<SelectProps> = (props) => {
       </div>
       <SelectContext.Provider value={passedContext}>
         <Transition in={menuOpen} animation="zoom-in-top" timeout={300}>
-          <ul className="viking-select-dropdown">{generateOptions()}</ul>
+          <ul className="fish-select-dropdown">{generateOptions()}</ul>
         </Transition>
       </SelectContext.Provider>
       {multiple && (
         <div
-          className="viking-selected-tags"
+          className="fish-selected-tags"
           style={{ maxWidth: containerWidth.current - 32 }}
         >
           {selectedValues.map((value, index) => {
             return (
-              <span className="viking-tag" key={`tag-${index}`}>
+              <span className="fish-tag" key={`tag-${index}`}>
                 {value}
                 <Icon
                   icon="times"
@@ -193,7 +193,7 @@ export const Select: FC<SelectProps> = (props) => {
   );
 };
 Select.defaultProps = {
-  name: "viking-select",
+  name: "fish-select",
   placeholder: "请选择",
 };
 export default Select;

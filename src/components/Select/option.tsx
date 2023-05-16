@@ -22,7 +22,7 @@ export const Option: FC<SelectOptionProps> = ({
 }) => {
   const { onSelect, selectedValues, multiple } = useContext(SelectContext);
   const isSelected = selectedValues.includes(value);
-  const classes = classNames("viking-select-item", {
+  const classes = classNames("fish-select-item", {
     "is-disabled": disabled,
     "is-selected": isSelected,
   });
