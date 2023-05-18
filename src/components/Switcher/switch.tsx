@@ -1,7 +1,7 @@
 import React, { ReactNode, CSSProperties, useState, useEffect } from "react";
 import classNames from "classnames";
 
-import "./index.scss";
+// import "./index.scss";
 
 export interface switchProps {
   className?: string;
@@ -16,7 +16,7 @@ export interface switchProps {
   style?: CSSProperties;
 }
 
-const Switch = (props: switchProps) => {
+export const Switch = (props: switchProps) => {
   const {
     className,
     disabled,

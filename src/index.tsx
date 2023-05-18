@@ -39,3 +39,4 @@ export { default as Upload } from "./components/Upload";
 // export { default as Alert } from './components/Alert'
 export { default as Select } from "./components/Select";
 export { default as Form } from "./components/Form";
+export { default as Switch } from "./components/Switcher";
