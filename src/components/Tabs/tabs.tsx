@@ -24,7 +24,7 @@ export interface TabsProps {
  * ### 引用方法
  *
  * ~~~js
- * import { Tabs } from 'vikingship'
+ * import { Tabs } from 'fishship'
  * ~~~
  */
 export const Tabs: FC<TabsProps> = (props) => {
@@ -42,7 +42,7 @@ export const Tabs: FC<TabsProps> = (props) => {
       }
     }
   };
-  const navClass = classNames("viking-tabs-nav", {
+  const navClass = classNames("fish-tabs-nav", {
     "nav-line": type === "line",
     "nav-card": type === "card",
   });
@@ -50,7 +50,7 @@ export const Tabs: FC<TabsProps> = (props) => {
     return React.Children.map(children, (child, index) => {
       const childElement = child as FunctionComponentElement<TabItemProps>;
       const { label, disabled } = childElement.props;
-      const classes = classNames("viking-tabs-nav-item", {
+      const classes = classNames("fish-tabs-nav-item", {
         "is-active": activeIndex === index,
         disabled: disabled,
       });
@@ -75,9 +75,9 @@ export const Tabs: FC<TabsProps> = (props) => {
     });
   };
   return (
-    <div className={`viking-tabs ${className}`}>
+    <div className={`fish-tabs ${className}`}>
       <ul className={navClass}>{renderNavLinks()}</ul>
-      <div className="viking-tabs-content">{renderContent()}</div>
+      <div className="fish-tabs-content">{renderContent()}</div>
     </div>
   );
 };
