@@ -8,6 +8,7 @@ export default {
   title: "第十章：Upload",
   id: "Upload",
   component: Upload,
+  tags: ["autodocs"],
   parameters: {
     docs: {
       source: {

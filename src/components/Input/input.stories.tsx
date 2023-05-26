@@ -5,6 +5,7 @@ export default {
   title: "第九章：Input",
   id: "Input",
   component: Input,
+  tags: ["autodocs"],
   decorators: [
     (Story) => (
       <div style={{ width: "350px" }}>

@@ -6,6 +6,7 @@ import Alert from "./alert";
 export default {
   title: "第四章作业：Alert 组件",
   id: "Alert",
+  tags: ["autodocs"],
   component: Alert,
 } as Meta<typeof Alert>;
 

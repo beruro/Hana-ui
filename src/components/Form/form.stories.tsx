@@ -12,6 +12,7 @@ const meta: Meta<typeof Form> = {
   id: "Form",
   component: Form,
   subcomponents: { Item: Item as any },
+  tags: ["autodocs"],
   decorators: [
     (Story) => (
       <div style={{ width: "550px" }}>
@@ -114,7 +115,7 @@ export const BRegForm = (args: any) => {
           getValueFromEvent={(e) => e.target.checked}
           valuePropName="checked"
         >
-          <input type="checkbox" />
+          <input type="checkbox" id="forma" />
         </Item>
         <span className="agree-text">
           注册即代表你同意<a href="#">用户协议</a>
@@ -171,7 +172,8 @@ export const CFullForm = (args: any) => {
               getValueFromEvent={(e) => e.target.checked}
               rules={[{ type: "enum", enum: [true], message: "请同意协议" }]}
             >
-              <input type="checkbox" />
+              <label htmlFor="form">输入</label>
+              <input type="checkbox" id="form" />
             </Item>
             <span className="agree-text">
               注册即代表你同意<a href="#">用户协议</a>

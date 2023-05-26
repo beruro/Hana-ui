@@ -6,6 +6,7 @@ export default {
   title: "第九章作业：Select",
   component: Select,
   id: "Select",
+  tags: ["autodocs"],
   subcomponents: { Option: Select.Option },
   decorators: [
     (Story: any) => (

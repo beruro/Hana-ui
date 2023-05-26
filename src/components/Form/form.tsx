@@ -31,6 +31,14 @@ export type IFormRef = Omit<
   "fields" | "dispatch" | "form"
 >;
 export const FormContext = createContext<IFormContext>({} as IFormContext);
+/**
+ * 一个不同状态下的表单组件。
+ * ### 引用方法
+ *
+ * ~~~js
+ * import { Alert } from 'fishship'
+ * ~~~
+ */
 export const Form = forwardRef<IFormRef, FormProps>((props, ref) => {
   const { name, children, initialValues, onFinish, onFinishFailed } = props;
   const { form, fields, dispatch, ...restProps } = useStore(initialValues);

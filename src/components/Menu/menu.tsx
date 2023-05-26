@@ -22,6 +22,18 @@ interface IMenuContext {
 }
 //创建context
 export const MenuContext = createContext<IMenuContext>({ index: "0" });
+
+/**
+ * Menu 菜单 支持水平和垂直。
+ *
+ * ~~~js
+ * // 这样引用
+ * import { Menu } from 'fishship'
+ * ~~~
+ *
+ *
+ */
+
 export const Menu: React.FC<MenuProps> = (props) => {
   const {
     className,

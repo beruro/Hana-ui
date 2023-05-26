@@ -9,11 +9,12 @@ import Button from "./button";
 export default {
   title: "第四章：Button",
   component: Button,
-  parameters: {
-    docs: {
-      page: mdx,
-    },
-  },
+  tags: ["autodocs"],
+  // parameters: {
+  //   docs: {
+  //     page: mdx,
+  //   },
+  // },
 } as Meta<typeof Button>;
 
 const Template: StoryFn<typeof Button> = (args) => <Button {...args} />;

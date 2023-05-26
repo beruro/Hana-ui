@@ -10,7 +10,7 @@ import MenuItem from "./components/Menu/menuItem";
 // import TransMenu from "./components/Menu";
 import SubMenu from "./components/Menu/subMenu";
 import Icon from "./components/Icon/icon";
-// import Transition from "./components/Transition/transition";
+import Transition from "./components/Transition/transition";
 import Input from "./components/Input";
 import AutoComplete from "./components/AutoComplete";
 import Upload from "./components/Upload";

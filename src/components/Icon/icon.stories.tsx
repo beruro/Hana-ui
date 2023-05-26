@@ -7,6 +7,7 @@ export default {
   title: "第七章：Icon 组件",
   id: "Icon",
   component: Icon,
+  tags: ["autodocs"],
 } as Meta<typeof Icon>;
 export const ADefaultIcons = () => (
   <>

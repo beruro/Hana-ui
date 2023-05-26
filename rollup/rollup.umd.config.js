@@ -4,6 +4,7 @@ import replace from "@rollup/plugin-replace";
 
 const config = {
   ...basicConfig,
+
   output: [
     {
       name: "Fish",
@@ -25,6 +26,7 @@ const config = {
     ...basicConfig.plugins,
   ],
   external: ["react", "react-dom", "axios"],
+  inlineDynamicImports: true,
 };
 
 export default config;

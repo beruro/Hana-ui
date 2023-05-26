@@ -14,6 +14,7 @@ export default {
   title: "AutoComplete 组件",
   component: AutoComplete,
   id: "AutoComplete",
+  tags: ["autodocs"],
   parameters: {
     docs: {
       source: {

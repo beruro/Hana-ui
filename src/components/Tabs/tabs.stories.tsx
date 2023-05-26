@@ -8,6 +8,7 @@ export default {
   title: "第六章作业：Tabs",
   id: "Tabs",
   component: Tabs,
+  tags: ["autodocs"],
   subcomponents: { TabItem: TabItem },
 } as Meta<typeof Tabs>;
 
