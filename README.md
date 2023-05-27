@@ -1,5 +1,56 @@
 # Hana-ui
 
+## 介绍
+
+一个基于「 React 」框架的个性化 UI 组件库
+
+## 安装
+
+### 使用 npm 安装
+
+`$ npm install hanayi-ui`
+
+### 使用 yarn 安装
+
+`$ yarn add hanayi-ui`
+
+## 示例
+
+### 1. 引入样式
+
+在`index.tsx(.jsx)`中：
+
+```js
+import "hanayi-ui/dist/index.css";
+```
+
+### 2. 使用组件
+
+```js
+import React from "react";
+import { Button } from "hanayi-ui";
+
+const App = () => (
+  <>
+    <Button btnType="primary" size="lg">
+      CLICK ME
+    </Button>
+  </>
+);
+```
+
+### 按需加载
+
+`violet-design` 默认支持基于 ES modules 的 tree shaking。
+
+### TypeScript
+
+`violet-design`使用 TypeScript 进行书写并提供了完整的定义文件。
+
+## 链接
+
+- [文档站]
+- [组件库]
 <!--
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
