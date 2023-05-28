@@ -28,7 +28,7 @@ export const MenuContext = createContext<IMenuContext>({ index: "0" });
  *
  * ~~~js
  * // 这样引用
- * import { Menu } from 'fishship'
+ * import { Menu } from 'hanayi-ui'
  * ~~~
  *
  *

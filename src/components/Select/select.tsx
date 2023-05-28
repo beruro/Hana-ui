@@ -47,7 +47,7 @@ export const SelectContext = createContext<ISelectContext>({
  * ### 引用方法
  *
  * ~~~js
- * import { Select } from 'fishship'
+ * import { Select } from 'hanayi-ui'
  * // 然后可以使用 <Select> 和 <Select.Option>
  * ~~~
  */

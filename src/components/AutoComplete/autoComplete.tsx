@@ -40,7 +40,7 @@ export interface AutoCompleteProps
  * ### 引用方法
  *
  * ~~~js
- * import { AutoComplete } from 'fishship'
+ * import { AutoComplete } from 'hanayi-ui'
  * ~~~
  */
 export const AutoComplete: FC<AutoCompleteProps> = (props) => {

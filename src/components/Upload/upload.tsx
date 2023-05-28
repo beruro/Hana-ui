@@ -53,7 +53,7 @@ export interface UploadProps {
  * ### 引用方法
  *
  * ~~~js
- * import { Upload } from 'fishship'
+ * import { Upload } from 'hanayi-ui'
  * ~~~
  */
 export const Upload: FC<UploadProps> = (props) => {

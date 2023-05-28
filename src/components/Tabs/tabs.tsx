@@ -24,7 +24,7 @@ export interface TabsProps {
  * ### 引用方法
  *
  * ~~~js
- * import { Tabs } from 'fishship'
+ * import { Tabs } from 'hanayi-ui'
  * ~~~
  */
 export const Tabs: FC<TabsProps> = (props) => {

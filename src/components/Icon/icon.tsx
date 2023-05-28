@@ -29,7 +29,7 @@ export interface IconProps extends FontAwesomeIconProps {
  * ### 引用方法
  *
  * ~~~js
- * import { Icon } from 'vikingship'
+ * import { Icon } from 'hanayi-ui'
  * ~~~
  */
 export const Icon: FC<IconProps> = (props) => {

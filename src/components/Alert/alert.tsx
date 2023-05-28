@@ -22,7 +22,7 @@ export interface AlertProps {
  * ### 引用方法
  *
  * ~~~js
- * import { Alert } from 'fishship'
+ * import { Alert } from 'hanayi-ui'
  * ~~~
  */
 export const Alert: FC<AlertProps> = (props) => {
