@@ -7,7 +7,7 @@ import Button from "./button";
 
 // https://github.com/storybookjs/storybook/issues/15574
 export default {
-  title: "第四章：Button",
+  title: "Button",
   component: Button,
   tags: ["autodocs"],
   // parameters: {

@@ -3,7 +3,7 @@ import { StoryFn, Meta } from "@storybook/react";
 import Menu from "./index";
 
 export default {
-  title: "第六章：Menu",
+  title: "Menu",
   id: "Menu",
   component: Menu,
   tags: ["autodocs"],

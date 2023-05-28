@@ -5,7 +5,7 @@ import Button from "../Button/button";
 import Icon from "../Icon/icon";
 
 export default {
-  title: "第十章：Upload",
+  title: "Upload",
   id: "Upload",
   component: Upload,
   tags: ["autodocs"],

@@ -2,7 +2,7 @@ import React from "react";
 import { StoryFn, Meta } from "@storybook/react";
 import { Input } from "./input";
 export default {
-  title: "第九章：Input",
+  title: "Input",
   id: "Input",
   component: Input,
   tags: ["autodocs"],

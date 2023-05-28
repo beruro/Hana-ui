@@ -3,7 +3,7 @@ import { Meta } from "@storybook/react";
 
 import Select from "./index";
 export default {
-  title: "第九章作业：Select",
+  title: "Select",
   component: Select,
   id: "Select",
   tags: ["autodocs"],

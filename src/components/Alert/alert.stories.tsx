@@ -4,7 +4,7 @@ import { StoryFn, Meta } from "@storybook/react";
 import Alert from "./alert";
 
 export default {
-  title: "第四章作业：Alert 组件",
+  title: "Alert",
   id: "Alert",
   tags: ["autodocs"],
   component: Alert,
