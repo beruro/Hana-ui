@@ -49,8 +49,8 @@ const App = () => (
 
 ## 链接
 
-- [文档站]
-- [组件库]
+- [文档站](https://hanafsih.cn)
+- [组件库](https://github.com/beruro/Hana-ui)
 <!--
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
